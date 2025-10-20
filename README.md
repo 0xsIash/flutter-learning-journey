@@ -40,8 +40,8 @@ If you’re also learning Flutter — feel free to explore, fork, or share ideas
 
 ## ⚙️ Tools & Technologies
 
-- **Flutter** 🦋  
-- **Dart** 💙  
+- **Flutter**  
+- **Dart**  
 - **Visual Studio Code**  
 - **Android Emulator / iOS Simulator**
 
