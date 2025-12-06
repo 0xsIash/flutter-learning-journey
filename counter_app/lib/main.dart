@@ -1,15 +1,17 @@
 import "package:flutter/material.dart";
 
 void main(){
-  runApp(Counter_App());
+  runApp(CounterApp());
 }
 
-class Counter_App extends StatefulWidget{
+class CounterApp extends StatefulWidget {
+  const CounterApp({super.key});
+
   @override
-  State<Counter_App> createState() => _Counter_AppState();
+  State<CounterApp> createState() => _CounterAppState();
 }
 
-class _Counter_AppState extends State<Counter_App> {
+class _CounterAppState extends State<CounterApp> {
   int counter = 0;
 
   void raiseCounter(){
@@ -20,7 +22,6 @@ class _Counter_AppState extends State<Counter_App> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -46,7 +47,7 @@ class _Counter_AppState extends State<Counter_App> {
             ),
         ),
 
-        floatingActionButton: FloatingActionButton(onPressed: raiseCounter, child: Icon(Icons.add), backgroundColor: Colors.blueAccent,),
+        floatingActionButton: FloatingActionButton(onPressed: raiseCounter, backgroundColor: Colors.blueAccent, child: Icon(Icons.add)),
       ),
     );
   }
